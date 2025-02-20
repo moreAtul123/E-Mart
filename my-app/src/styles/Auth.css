@@ -1,0 +1,136 @@
+/* Background Image */
+.auth-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://media.istockphoto.com/id/1067203316/photo/woman-hand-hold-shopping-cart-with-abstract-blur-supermarket-aisle-background.jpg?s=612x612&w=0&k=20&c=e5BYg4lICeATDRfxVVAm13a7587ElhnI15phCWtFzyc=") no-repeat center center/cover;
+}
+
+/* Glassmorphism Login Card */
+.auth-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Error & Success Messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Buttons */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff3b6f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #e33262;
+}
+
+.auth-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.register-link span {
+  color: #ff3b6f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.register-link span:hover {
+  color: #e33262;
+}
+
+/* Animation for Success Message */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+  .auth-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

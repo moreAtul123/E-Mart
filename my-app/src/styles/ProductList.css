@@ -1,0 +1,210 @@
+/* Product Container */
+.product-container {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Product Grid: 3 Products Per Row */
+/* Product Grid: 3 Products Per Row with Variable Spacing */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr; /* Three columns with different sizes */
+    gap: 30px 15px; /* Varying space between products */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    max-width: 260px;
+    height: 220px;
+    object-fit: contain; /* Ensures full image fits within the frame */
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Product Info */
+.product-info {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #222;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Product Pricing */
+.product-pricing {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.discount-price {
+    font-size: 1rem;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.final-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #009688;
+}
+
+/* SuperCoins Checkbox */
+.supercoin-container {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.supercoin-container input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Buttons */
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.add-to-cart,
+.buy-now {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    width: 120px;
+}
+
+.add-to-cart {
+    background: #ff9800;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background: #e68900;
+}
+
+.buy-now {
+    background: #4caf50;
+    color: white;
+}
+
+.buy-now:hover {
+    background: #388e3c;
+}
+
+.product-card:nth-child(odd) {
+    transform: scale(1.05); /* Slightly bigger for odd products */
+}
+
+.product-card:nth-child(even) {
+    transform: scale(0.95); /* Slightly smaller for even products */
+}
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid #ddd;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the container properly */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .image-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-image {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+    }
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

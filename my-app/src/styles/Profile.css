@@ -1,0 +1,130 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+/* Profile Title */
+.profile-title {
+    color: #6e8efb;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Profile List */
+.profile-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.profile-list li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-list li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons */
+.profile-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #6e8efb;
+    border: none;
+    color: white;
+}
+
+.btn-danger {
+    background: #d9534f;
+    border: none;
+    color: white;
+}
+
+/* Edit Form */
+.edit-form input, .edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.edit-form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .error-text {
+    color: red;
+    text-align: center;
+  }
+  
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

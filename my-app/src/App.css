@@ -1,0 +1,84 @@
+/* Custom Styles for E-Mart Advanced Navbar */
+.navbar {
+  background-color: #343a40; /* Dark gray background */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background-color: #495057; /* Slightly lighter gray on hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+/* Hover Effects on Navbar Links */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffd700 !important; /* Gold color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Navbar Logo */
+.navbar-brand.logo {
+  font-family: 'Arial', sans-serif;
+  color: #ffd700 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand.logo:hover {
+  transform: rotate(360deg); /* Rotate logo on hover */
+  color: #ff6347; /* Tomato color on hover */
+}
+
+/* Custom Button for Logout */
+.btn-hover {
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #ffd700; /* Gold color on hover */
+  transform: scale(1.05); /* Button zoom effect */
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffd700;
+}
+
+/* Animation on page load for navbar */
+.navbar {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Margin for content under the fixed navbar */
+.container.mt-5 {
+  margin-top: 80px; /* Ensure content is below fixed navbar */
+}

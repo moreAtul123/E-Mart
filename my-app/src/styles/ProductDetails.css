@@ -1,0 +1,139 @@
+/* Amazon-style product detail page */
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.product-container {
+  display: flex;
+  max-width: 1100px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 350px;
+  height: auto;
+  object-fit: contain; /* Changed to contain for a more natural fit */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* Product Info */
+.product-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-category {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-category span {
+  font-weight: bold;
+  color: #222;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b12704;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buy-now-btn,
+.add-to-cart-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buy-now-btn {
+  background-color: #ff9900;
+  color: white;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff7710;
+  transform: scale(1.05);
+}
+
+.add-to-cart-btn {
+  background-color: #f0c14b;
+  color: #111;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Delivery & Seller Info */
+.delivery-info,
+.seller-info {
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .image-container {
+      width: 100%;
+      height: auto;
+  }
+
+  .buttons {
+      flex-direction: column;
+  }
+}

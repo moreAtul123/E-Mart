@@ -1,0 +1,55 @@
+.payment-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .payment-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .product-title {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .product-card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .pay-button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+  }
+  

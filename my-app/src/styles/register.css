@@ -1,0 +1,143 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Image */
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://media.gettyimages.com/id/185404583/photo/register.jpg?s=612x612&w=0&k=20&c=yTfc8oZhQWP6jVEb2fvb4ZdnUiwjGzg89b6b7q0AdWo=") no-repeat center center/cover;
+}
+
+/* Registration Box */
+.register-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo */
+.register-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* "Create Account" Heading */
+.create-account {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-form input,
+.register-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Placeholder Color */
+.register-form input::placeholder,
+.register-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Input Focus */
+.register-form input:focus,
+.register-form textarea:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+}
+
+.register-btn.secondary {
+    background: #ddd;
+    color: #333;
+}
+
+.register-btn.secondary:hover {
+    background: #bbb;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+/* Success Message */
+.success-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 255, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.success-message.show {
+    opacity: 1;
+}

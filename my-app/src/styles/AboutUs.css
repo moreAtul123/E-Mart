@@ -1,0 +1,111 @@
+/* About Us - Stylish & Interactive */
+.about-container {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  .highlight {
+    color: #ff6600;
+  }
+  
+  .header-gif {
+    width: 100px;
+    margin-top: 10px;
+    animation: bounce 1.5s infinite alternate;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  
+  .why-section, .team-section, .thank-you-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .why-section:hover, .team-section:hover, .thank-you-section:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-section h2, .why-section h2, .thank-you-section h2 {
+    color: #ff6600;
+  }
+  
+  .team-gif {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .team-leader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .team-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .team-list li {
+    font-size: 1rem;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-list li:hover {
+    transform: scale(1.1);
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-header h1 {
+      font-size: 2rem;
+    }
+    .about-content {
+      font-size: 1rem;
+    }
+    .team-gif {
+      width: 120px;
+    }
+  }
+  
